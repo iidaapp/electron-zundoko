@@ -7,18 +7,18 @@ const clear = document.getElementById('clear')
 const target = document.getElementById('contents')
 
 zun.addEventListener('click', (e) => {
-  target.textContent += 'ズン'
-  ipcRenderer.send('zun')
+    target.textContent += 'ズン'
+    ipcRenderer.send('zun')
 })
 doko.addEventListener('click', (e) => {
-  target.textContent += 'ドコ'
-  ipcRenderer.send('doko')
+    target.textContent += 'ドコ'
+    ipcRenderer.send('doko')
 })
 clear.addEventListener('click', (e) => {
-  target.textContent = ''
-  ipcRenderer.send('clear')
+    target.textContent = ''
+    ipcRenderer.send('clear')
 })
 
 ipcRenderer.on('reset', () => {
-  target.textContent = ''
+    target.textContent = ''
 })
