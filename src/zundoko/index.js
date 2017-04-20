@@ -66,7 +66,7 @@ const zundoko = {
                 nodeIntegration: true
             }
         })
-        main.loadURL(`file://${process.cwd()}/src/renderer/zundoko.html`)
+        main.loadURL(`file://${process.cwd()}/src/renderer/kiyoshi/kiyoshi.html`)
         this.listen()
     },
     listen() {
